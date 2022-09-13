@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "main.h"
-  
+/**
+ * main -executes printchar
+ *
+ * Return void
+ */
 void print_putchar(void)
 {
 	int counter = 0;
