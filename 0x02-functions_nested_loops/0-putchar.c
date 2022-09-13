@@ -21,3 +21,8 @@ void print_putchar(void)
 	}
 	putchar('\n');
 }
+int main(void)
+{
+	print_putchar();
+	return(0);
+}
