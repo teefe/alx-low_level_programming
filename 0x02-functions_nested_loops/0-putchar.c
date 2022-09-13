@@ -4,7 +4,7 @@ void print_putchar(void)
 {
 	int counter = 0;
 
-	int chars[] = {95, 112, 117, 11, 99, 104, 97, 114,};
+	int chars[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
 	while (counter < 8)
 	{
