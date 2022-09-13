@@ -4,6 +4,7 @@
  * main -executes printchar
  *
  * Return void
+ * print_putchar-prints the char
  */
 void print_putchar(void)
 {
