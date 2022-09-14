@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main -executes printchar
+ * main - executes printchar
  *
+ * print_putchar - prints the _putchar statements
+ *
+ * @counter: loop counter
+ * 
  * Return void
- *
- * print_putchar -prints the _putchar statements
  */
 void print_putchar(void)
 {
