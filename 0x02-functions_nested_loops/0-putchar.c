@@ -1,15 +1,12 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * main - executes printchar
- *
- * print_putchar - prints the _putchar statements
- *
- * @counter: loop counter
- * 
- * Return void
- */
-void print_putchar(void)
+*_putchar - prints _putchar
+*
+*
+*Return: Always 0
+*/
+int _putchar(void)
 {
 	int counter = 0;
 
@@ -21,9 +18,5 @@ void print_putchar(void)
 		counter++;
 	}
 	putchar('\n');
-}
-int main(void)
-{
-	print_putchar();
 	return (0);
 }
