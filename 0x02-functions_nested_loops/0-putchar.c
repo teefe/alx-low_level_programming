@@ -26,6 +26,6 @@ void _putchar(void)
 */
 int main(void)
 {
-	_putchar()
+	_putchar();
 	return (0);
 }
