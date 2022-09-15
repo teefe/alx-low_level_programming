@@ -3,10 +3,9 @@
 /**
 *_putchar - prints _putchar
 *
-*
 *Return: Always 0
 */
-int _putchar(void)
+void _putchar(void)
 {
 	int counter = 0;
 
@@ -18,5 +17,15 @@ int _putchar(void)
 		counter++;
 	}
 	putchar('\n');
+}
+
+/**
+*main - executes the _putchar function
+*
+*Return: 0
+*/
+int main(void)
+{
+	_putchar()
 	return (0);
 }
