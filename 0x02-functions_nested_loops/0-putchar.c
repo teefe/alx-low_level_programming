@@ -1,11 +1,12 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-*_putchar - prints _putchar
+*print_putchar - prints _putchar
 *
 *Return: Always 0
 */
-void _putchar(void)
+void print_putchar(void)
 {
 	int counter = 0;
 
@@ -26,6 +27,6 @@ void _putchar(void)
 */
 int main(void)
 {
-	_putchar();
+	print_putchar();
 	return (0);
 }
