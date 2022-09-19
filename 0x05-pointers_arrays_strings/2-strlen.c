@@ -1,4 +1,4 @@
-#include ""main.h"
+#include "main.h"
 
 /**
 *_strlen - counts the string length
@@ -13,5 +13,5 @@ int _strlen(char s[])
 
 	while (s[counter] != '\0')
 		counter++;
-	return (counter)
+	return (counter);
 }
