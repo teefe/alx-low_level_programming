@@ -2,35 +2,22 @@
 #include "stdio.h"
 
 /**
-*_strlen - counts the string length
-*@s:return value
-*
-*Return: string length
-*/
-int _strlen(char s[])
+ * print_rev - prints a string, in reverse, followed by a new line.
+ * @s: input string.
+ * Return: no return.
+ */
+void print_rev(char *s)
 {
-	int r = 0;
-	{
-	while (s[r] != '\0')
-		r++;
-	return (r);
-	}
-}
+	int count = 0;
 
-/**
-*print_rev - print rev string
-*@s:param string
-*
-*Return: Always 0
-*/
-void print_rev(char s[])
-{
-	int r = _strlen(s) - 1;
-
-	while (r >= 0)
+	while (count >= 0)
 	{
-		putchar(s[r]);
-		r++;
+		if (s[count] == '\0')
+			break;
+		count++;
 	}
-	printf("\n");
+
+	for (count--; count >= 0; count--)
+		_putchar(s[count]);
+	_putchar('\n');
 }
