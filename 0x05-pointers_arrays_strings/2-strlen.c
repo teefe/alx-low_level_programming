@@ -2,16 +2,16 @@
 
 /**
 *_strlen - counts the string length
-*@counter: stores len
-*@s: the string parameter
+*@s:return value
 *
-*Return counter
+*Return: string length
 */
 int _strlen(char s[])
 {
-	int counter = 0;
-
-	while (s[counter] != '\0')
-		counter++;
-	return (counter);
+	int r = 0;
+	{
+	while (s[r] != '\0')
+		r++;
+	return (r);
+	}
 }
