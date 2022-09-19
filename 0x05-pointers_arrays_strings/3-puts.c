@@ -16,4 +16,5 @@ void _puts(char s[])
 		putchar(s[r]);
 		r++;
 	}
+	printf("\n");
 }
