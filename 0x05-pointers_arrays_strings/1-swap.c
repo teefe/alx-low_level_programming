@@ -7,7 +7,7 @@
 *
 *Return: Always 0
 */
-void 1_swap(int *a, int *b)
+void swap(int *a, int *b)
 {
 	int c = *a;
 	*a = *b;
