@@ -12,7 +12,7 @@ void _puts(char s[])
 
 	while (s[r] != '\0')
 	{
-		putchar(s[r])
+		putchar(s[r]);
 		r++;
 	}
 }
