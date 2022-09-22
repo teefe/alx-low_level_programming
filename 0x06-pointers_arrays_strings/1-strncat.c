@@ -20,6 +20,8 @@ char *_strncat(char *dest, char *src, int n)
 	while (i < n)
 	{
 		*(dest + destlen) = *(src + i);
+		if (*(src + i) == '\0')
+			break;
 		i++;
 		destlen++;
 	}
