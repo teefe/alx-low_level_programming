@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-*_strncpy - concatenates two strings,
+*_strncpy - copies a string
 *@dest: destination.
 *@src: source.
-*@n: amount of bytes used from src.
+*@n: amount of bytes from src.
 *Return: the pointer to dest.
 */
 char *_strncpy(char *dest, char *src, int n)
@@ -15,8 +15,6 @@ char *_strncpy(char *dest, char *src, int n)
 	while (i < n)
 	{
 		*(dest + destlen) = *(src + i);
-		if (*(src + i) == '\0')
-			break;
 		i++;
 		destlen++;
 	}
