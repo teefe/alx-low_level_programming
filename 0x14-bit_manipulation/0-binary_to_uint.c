@@ -1,47 +1,61 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
-  * binary_to_uint - Converts a binary number to an unsigned int
-  * @b: The binary string to converts
-  *
-  * Return: The positive number converted from a binary
-  */
-unsigned int binary_to_uint(const char *b)
+ * powX - raises b to p
+ * @b: base number
+ * @p: power of a number
+ * Return: b the power of p
+ */
+int powX(int b, int p)
 {
-	unsigned int len = 0, count = 0, sum = 0;
+	int prod = 1;
 
-	if (b == NULL)
-		return (0);
-
-	len = _strlen(b);
-	while (len--)
+	while (p > 0)
 	{
-		if (b[len] != 48 && b[len] != 49)
-			return (0);
-
-		if (b[len] == 49)
-			sum += 1 << count;
-
-		count++;
+		prod *= b;
+		p--;
 	}
-
-	return (sum);
+	return (prod);
 }
 
 /**
-  * _strlen - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int _strlen(const char *s)
+ * _len - the length of a string
+ * @s:string
+ * Return: lenght of s
+ */
+int _len(const char *s)
 {
-	int c = 0;
+	int l = 0;
 
-	while (s[c])
-		c++;
+	while (*s)
+	{
+		l++;
+		s++;
+	}
+	return (l);
+}
+/**
+ * binary_to_uint - function that converts a binary number to an unsigned int
+ * @b: input string
+ * Return: unsigned decimal conversion, 0 if input is NULL
+ */
+unsigned int binary_to_uint(const char *b)
+{
+	int power;
+	int number = 0;
 
-	return (c);
+	if (!b)
+		return (0);
+	power = _len(b) - 1;
+	while (*b)
+	{
+		if (*b != '0' && *b != '1')
+			return (0);
+
+		if (*b == '1')
+			number += powX(2, power);
+		b++;
+		power--;
+	}
+	return (number);
 }
